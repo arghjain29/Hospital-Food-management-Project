@@ -7,9 +7,12 @@ dotenv.config();
 connectDB();
 
 const app = express();
-// app.use(cors());
+const corsOptions = {
+    origin: process.env.FRONTEND_URL, // Replace with your frontend domain
+    optionsSuccessStatus: 200 // For legacy browsers
+};
 
-app.options('*', cors());
+app.use(cors(corsOptions));
 app.use(express.json());
 
 // Routes
