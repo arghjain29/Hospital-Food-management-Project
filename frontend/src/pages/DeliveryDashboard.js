@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
 import DeliveryNavbar from '../components/DeliveryNavbar'
 
 const DeliveryDashboard = () => {
@@ -64,7 +63,7 @@ const DeliveryDashboard = () => {
             <main className="p-6">
                 <div className="container mx-auto">
                     {/* Dashboard Title */}
-                    <h2 className="text-2xl font-extrabold text-green-700 mb-4">Welcome, {assignedDeliveries[0].name}</h2>
+                    <h2 className="text-2xl font-extrabold text-green-700 mb-4">Delivery Man Dashboard</h2>
 
                     {/* Assigned Meal Boxes */}
                     <div className="bg-white shadow-lg rounded-lg p-6 h-[470px] overflow-y-auto">
