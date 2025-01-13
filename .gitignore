@@ -57,7 +57,7 @@ Server/coverage
 Server/build
 
 # misc
-frontend/.env
+Server/.env
 Server/.DS_Store
 Server/.env.local
 Server/.env.development.local
